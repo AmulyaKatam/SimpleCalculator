@@ -121,10 +121,21 @@ let operator="";
 
 function click1(x){
 	//output_screen="";
+	if(output_screen.textContent=="0"){
+		output_screen.innerHTML=String(x);
+		output_screen.style.color="white";
+		output_screen.style.fontSize="30px";
+		output_screen.style.fontWeight="bold";
+		
+	}
+	else{
+		
+	
 	output_screen.innerHTML=output_screen.textContent+String(x);
 	output_screen.style.color="white";
 	output_screen.style.fontSize="30px";
 	output_screen.style.fontWeight="bold";
+	}
 	
 }
 function add(){
